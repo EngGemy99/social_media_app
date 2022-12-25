@@ -1,0 +1,75 @@
+* {
+    text-decoration: none;
+}
+body {
+    background-color: #eee;
+}
+$main-color: #2c74b3;
+.up {
+    position: fixed;
+    z-index: 10000;
+    bottom: 0;
+    right: 10px;
+}
+
+.user-information {
+    display: none;
+}
+
+.create-post-btn {
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    color: $main-color;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+.posts-details {
+    color: rgb(203, 203, 203);
+    span {
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: $main-color;
+    }
+}
+
+.navbar-brand {
+    color: $main-color;
+    &:hover {
+        color: $main-color;
+    }
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #a8d1d1;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots {
+    width: 21.1px;
+    height: 21.1px;
+    background: $main-color;
+    color: $main-color;
+    border-radius: 50%;
+    box-shadow: 21.1px 0, -42.2px 0;
+    animation: dots-h5boszhg 0.4s infinite linear alternate;
+}
+
+@keyframes dots-h5boszhg {
+    50% {
+        box-shadow: 21.1px 0, -21.1px 0;
+    }
+
+    100% {
+        box-shadow: 42.2px 0, -21.1px 0;
+    }
+}
